@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import './variables';
+
+body {
+    font-family:'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navigation {
+    margin: 20px 15px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo-list {
+        margin-left: 30px;
+    }
+
+    .menu-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style: none;
+
+        .menu-item {
+            padding: 12px;
+            margin: 0 35px;
+            a {
+                text-decoration: none;
+                color: #252b45;
+                transition: 0.5 all;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+.introduce {
+    height: 88vh;
+    background: linear-gradient(0deg, rgba(75, 72, 72, 0.6), rgba(88, 85, 85, 0.6)), url("../assets/food.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+
+    h3{
+        line-height: 36px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    h2 {
+        font-family: "Poppins", sans-serif;
+        font-size: 58px;
+        font-weight: bold;
+        width: 939px;
+        text-align: center;
+    }
+
+    h4{
+        color: #F6F6F6;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: 0.3px;
+    }
+
+    .link-group {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 10px;
+        width: 50%;
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            border-radius: 30px;
+            font-weight: 700;
+            padding: 20px;
+            border: 0.8px solid white;
+            border-radius: 30px;
+            width: 250px;
+            transition: 0.5 all;
+
+            &:hover {
+                background: $primary-color;
+                border: none;
+            }
+        }
+    }
+}
+
+.demonstration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -99px;
+
+    img{
+        margin: auto -80px;
+    }
+
+    &:nth-child(1) img{
+        max-height: 500px;
+    }
+}
+
+hr {
+    position: absolute;
+    width: 884px;
+    border-radius: 30px;
+    border: 3px solid #e4e4e4;
+    margin: auto 18%;
+}
+
+.title{
+    text-align: center;
+    margin-top: 90px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.steps{
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 100px 0;
+
+        .column{
+            max-width: 700px;
+            font-family: 'Montserrat', sans-serif;
+            word-wrap: break-word;
+            h3{
+                
+                color: $primary-color;
+                font-size: 24px;
+            }
+
+            h2{
+                font-size: 40px;
+                margin: 25px 0;
+            }
+
+            h4{
+                font-size: 24px;
+                letter-spacing: 0.2px;
+                margin: 15px 0;
+                color: $second-color;
+            }
+        }
+    }
+}
+
+.download{
+    height: 65vh;
+    background: linear-gradient(0deg, rgba(75, 72, 72, 0.6), rgba(72, 72, 72, 0.6)), url("../assets/groceries.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    
+    
+    h2{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 57px;
+    }
+
+    h4{
+        font-weight: 500;
+        margin-top: 20px;
+        letter-spacing: 0.8px;
+    }
+
+
+    .link-group {
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 65px;
+        width: 50%;
+
+        i{
+            margin-right: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            border-radius: 15px;
+            font-weight: 700;
+            padding: 20px;
+            border: 1px solid white;
+            width: 250px;
+
+            &:hover {
+                background: $primary-color;
+                border: none;
+            }
+        }
+    }
+}
+
+footer{
+ 
+    bottom: 0;
+    height: 15vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    svg{
+        width: 250px;
+        height: 70px;
+    }
+
+    ul{
+      display: flex;
+      align-items: center;
+      list-style: none;
+      left: 200px;
+
+      li{
+          margin: 0 20px;
+
+          i{
+              font-size: 26px;
+              color: $primary-color;
+          }
+      }
+    }
+    
+}
+
+
